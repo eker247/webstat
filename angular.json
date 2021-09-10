@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "5eb2ac0f-06ee-4f47-90de-8684b0ab456b"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -84,6 +87,12 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "webstat:build"
+          }
+        },
+        "jest": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "tsConfig": "<rootDir>/src/tsconfig.test.json"
           }
         },
         "test": {
